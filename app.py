@@ -28,8 +28,11 @@ def datetime():
         my_time = dt.datetime.now(dt.timezone(dt.timedelta(hours=-7), 'PDT'))
  
     # Display the timezones
-    print(f"""
-          System Timezone: {sys_tz} --- System Time: {sys_time}
-          UTC Timezone: {tz_string(utc_time)} --- UTC Time: {utc_time}
-          My Timezone: {tz_string(my_time)} --- My Time: {my_time}
-          """)
+    return f""" <p>
+                System Timezone: {sys_tz} --- System Time: {sys_time}
+                UTC Timezone: {tz_string(utc_time)} --- UTC Time: {utc_time}
+                My Timezone: {tz_string(my_time)} --- My Time: {my_time}
+                </p>
+                """
+    
+  
