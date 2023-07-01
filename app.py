@@ -29,8 +29,9 @@ def datetime():
  
     # Display the timezones
     return f""" <p>
-                System Timezone: {sys_tz} --- System Time: {sys_time}
+                System Timezone: {sys_tz} --- System Time: {sys_time} <br>
                 UTC Timezone: {tz_string(utc_time)} --- UTC Time: {utc_time}
+                <br>
                 My Timezone: {tz_string(my_time)} --- My Time: {my_time}
                 </p>
                 """
