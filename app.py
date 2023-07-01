@@ -29,10 +29,10 @@ def datetime():
  
     # Display the timezones
     return f""" <p>
-                System Timezone: {sys_tz} --- System Time: {sys_time} <br>
-                UTC Timezone: {tz_string(utc_time)} --- UTC Time: {utc_time}
+                System Timezone: {sys_tz} --- System Time: {sys_time.replace(second=0, microsecond=0)} <br>
+                UTC Timezone: {tz_string(utc_time)} --- UTC Time: {utc_time.replace(second=0,microsecond=0)}
                 <br>
-                My Timezone: {tz_string(my_time)} --- My Time: {my_time}
+                My Timezone: {tz_string(my_time)} --- My Time: {my_time.replace(second=0,microsecond=0)}
                 </p>
                 """
     
